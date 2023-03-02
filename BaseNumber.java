@@ -77,10 +77,10 @@ public class BaseNumber {
                         }
                         System.out.print("Select operands(+,-,*,/,%): ");
                         char operands = s.nextLine().charAt(0);
-                        System.out.printf("(%s) base %d %c (%s) base %d = %s\n"
+                        System.out.printf("(%s) base %d %c (%s) base %d = (%s) base %d\n"
                         ,number,inputBase,operands,numberSec,inputSecBase,
                         num.operation
-                        (number,inputBase,numberSec,inputSecBase,operands,outputBase));
+                        (number,inputBase,numberSec,inputSecBase,operands,outputBase),outputBase);
                         
                     }
                 }
